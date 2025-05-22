@@ -28,7 +28,7 @@ class Auth extends BaseController
                 'logged_in'=> true
             ]);
 
-            return redirect()->to('/dashboard');
+            return redirect()->to('/izin');
         } else {
             return redirect()->back()->with('error', 'Username atau Password salah');
         }

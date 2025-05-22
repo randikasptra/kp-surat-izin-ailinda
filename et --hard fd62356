@@ -1,0 +1,19 @@
+[33m25ec062[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m error
+[33m46e5d8d[m Merge branch 'form-login'
+[33m01be82a[m[33m ([m[1;32mform-login[m[33m)[m add/seed-SiswaSeed
+[33mfd62356[m add/migrate-createsiswa
+[33m810f3d2[m add/migrate-SiswaSeeder
+[33m27c45e4[m add/usertable
+[33m46c7bf5[m add/sidenav
+[33m5073522[m add/views-form
+[33mdf1ef43[m add/contoller-suratizin
+[33mec18ef6[m add/model-suratizin
+[33m12a85b2[m add/migrate-usertable
+[33m1d83af8[m rm/welcome_message
+[33m030940d[m add/route-all
+[33m681dd73[m add/auth-contrler-dashbaord
+[33md03a20a[m add/auth-controller
+[33m5d49872[m add/seed-user
+[33mcbcee62[m add/migrasion-user
+[33mcd3d5ef[m add/code-CI
+[33mab66959[m first commit
