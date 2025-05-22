@@ -11,16 +11,22 @@ class UserSeeder extends Seeder
         $data = [
             [
                 'username' => 'piket1',
-                'password' => password_hash('admin123', PASSWORD_DEFAULT),
-                'role'     => 'piket'
+                'password' => password_hash('piket123', PASSWORD_DEFAULT),
+                'role'     => 'piket',
             ],
             [
                 'username' => 'bp1',
-                'password' => password_hash('admin123', PASSWORD_DEFAULT),
-                'role'     => 'bp'
-            ]
+                'password' => password_hash('bp123', PASSWORD_DEFAULT),
+                'role'     => 'bp',
+            ],
         ];
 
-        $this->db->table('users')->insertBatch($data);
+        // Cek apakah user sudah ada
+        foreach ($data as $user) {
+            $exists = $this->db->table('users')->where('username', $user['username'])->get()->getRow();
+            if (!$exists) {
+                $this->db->table('users')->insert($user);
+            }
+        }
     }
 }
