@@ -7,5 +7,15 @@ class SuratIzinModel extends Model
 {
     protected $table = 'surat_izin';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['nama_siswa', 'kelas', 'jurusan', 'alasan', 'status_kembali', 'poin_pelanggaran'];
+    protected $allowedFields = [
+    'nama_siswa',
+    'kelas',
+    'jurusan',
+    'alasan',
+    'jam_keluar',
+    'jam_masuk',
+    'status_kembali',
+    'poin_pelanggaran'
+];
+
 }
